@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own-word</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/own-words.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="links-menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tongue-twists.html">tongue-twists</a></li>
+                    <li><a href="../index.html">eng-rus</a></li>
+                    <li><a href="rus-eng.html">rus-eng</a></li>
+                    <li><a href="own-words.html" class="active">own-words</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="content box">
+            <div class="block">
+                <h1>Страница для генерации слов, введенных вами</h1>
+                <p>Это упражнение поможет вам проверить качество запоминания новых слов, узнать на какие из них вам
+                    стоит боратить внимание. Советую вводить количество слов, больше 20.</p>
+                <div class="block">
+                
+                <label for="wordInput">Введите слова, которые вы хотите выучить (разделитель между слов - запятая):</label>
+                <input type="text" id="wordInput" placeholder="Enter word">
+                <button onclick="addWords()">Add Words</button>
+              
+                <ul id="wordList"></ul>
+              
+                <button onclick="generateRandom()">Generate Random Words</button>
+              
+                <ul id="translationList"></ul>
+            </div>
+            <div class="block">
+                <h3>Например:</h3>
+                <p>adventure, brave, compassion, empathy, fish, freedom, gratitude, giraffe, hope, joy, kindness, love, mindfulness, nature, optimism, passion, serenity, trust, unity, yawn</p>
+            </div>
+            </div>
+        </div>
+        <script src="../scripts/own.js"></script>
+    </div>
+</body>
+
+</html>
