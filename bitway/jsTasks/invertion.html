@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Реализуйте и экспортируйте по умолчанию функцию, которая меняет в строке
+        регистр каждой буквы на противоположный. Функция должна возвращать полученный результат</p>
+    <input type="text" title="f" id="secondString">
+    <input type="button" onclick="change()" value="change">
+
+    <script>
+            function change(){
+                let str = document.getElementById('secondString').value;
+                inversion(str);
+            }
+            
+            const inversion = (string)  =>{
+                let length = string.toString().length;
+                let res = [];
+
+                for(let i=0; i<length;i++){
+                    if(string[i]==string[i].toLowerCase()){
+
+                        res.push( string[i].toUpperCase())
+
+                    }
+                    else{
+                        string[i].toLowerCase();
+                        res.push(string[i].toLowerCase())
+
+                    }
+                }
+                alert(res.join(''))
+            }
+         </script>
+</body>
+
+</html>

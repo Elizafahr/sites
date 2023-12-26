@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>"Счастливым" называют билет с номером, в котором сумма первой половины цифр равна сумме второй половины цифр.
+        Номера могут быть произвольной длины, с единственным условием, что количество цифр всегда чётно, например: 33
+        или 2341 и так далее.
+
+        Билет с номером 385916 — счастливый, так как 3 + 8 + 5 === 9 + 1 + 6. Билет с номером 231002 не является
+        счастливым, так как 2 + 3 + 1 !== 0 + 0 + 2.</p>
+    <input type="text" title="" id="num">
+    <input type="button" onclick="check()" value="check">
+
+    <script>
+
+        function check() {
+            let number = Number(document.getElementById('num').value);
+            isHappyTicket(number);
+
+        }
+
+
+        const isHappyTicket = (num) => {
+            let len = num.toString().length;
+            let firstSum = 0;
+            let secSum = 0;
+            alert(len)
+            if (len % 2 !== 0) {
+                alert("Введите четноре число")
+            }
+            else {
+                for (let i = 0; i < (len / 2) - 1; i++) 
+                { firstSum += num[i]; } 
+
+                for (let i = len - 1; i < (len / 2) - 1; i--) {
+                    secSum += num[i];
+                } 
+
+                if (firstSum === secSum) {
+                     alert("число счастливое") 
+                    }
+                else{
+                    alert("число не счастливое")
+                }
+            }
+
+           
+            
+        } </script>
+</body>
+
+</html>
