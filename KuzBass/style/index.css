@@ -1,6 +1,6 @@
 @font-face {
     font-family: "montseratt";
-    src: url("..../Медиа/fonts/fonts/Montserrat/Montserrat-Regular.ttf");
+    src: url("../Медиа/fonts/fonts/Montserrat/Montserrat-Regular.ttf");
 }
 *{
     padding: 0;
@@ -45,7 +45,7 @@ p {
     
 }
 .header{
-    background-image: url("..../Медиа/images/main/bg (1).png");
+    background-image: url("../Медиа/images/main/bg (1).png");
     background-size: cover;
  }
 .container{
@@ -607,7 +607,7 @@ input[type=radio] {
 .form-departments__form-field input[type="checkbox"]:checked+label::before,
 .form-departments__form-field input[type="checkbox"]:focus:checked+label::before {
 
-    background: url("/images/svg/checkbox-checked.svg") no-repeat center/16px auto #4BAF32;
+    background: url("../Медиа/images/svg/checkbox-checked.svg") no-repeat center/16px auto #4BAF32;
 }
 
 .form-departments__form-field label {

@@ -509,7 +509,7 @@ swiper-slide {
 
 @media (max-width:1023px) {
     #second {
-        background-image: url("/images/slider-bg-main-tablet@1x.jpg");
+        background-image: url("../images/slider-bg-main-tablet@1x.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
