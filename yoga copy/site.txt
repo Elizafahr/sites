@@ -1,5 +1,0 @@
-yogly:
-spaceweb
-login: yogly
-password:eLb4@pYh94Gbffji
-http://yogly.temp.swtest.ru/
