@@ -1,0 +1,119 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.block {
+  padding: 20px 0;
+}
+
+.box{
+  padding: 50px 8%;
+}
+
+p{
+  padding: 5px 0;
+}
+header{
+  background-color: #4CAF50;
+  display: block;
+}
+.links-menu ul{
+  padding: 0px 150px 0px 0px;
+  display: flex;
+  justify-content: end;
+}
+.links-menu ul li{
+
+   list-style: none;
+   /* display: inline; */
+   margin-right: 50px;
+   text-transform:capitalize;
+}
+.links-menu ul li a{
+  padding: 15px 0px;
+     display: block;
+
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+
+}
+.links-menu ul li a:hover, .links-menu ul li .active{
+  color: rgb(208, 255, 208);
+  border-bottom: 3px solid rgb(208, 255, 208);
+}
+
+
+h1 {
+    /* text-align: center; */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #words-container {
+    margin-top: 20px;
+  }
+  
+  #words-container > div {
+    margin-bottom: 10px;
+  }
+  
+  #words-container span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #words-container input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  #words-container input[readonly] {
+    background-color: lightgreen;
+  }
+  
+  #words-container input:not([readonly]) {
+    background-color: white;
+  }
+  
+  #words-container input:not([readonly]):focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 3px #4CAF50;
+  }
+  input{
+    min-width: 300px;
+  }
+  @media screen and (max-width: 980px) {
+    .links-menu ul{
+      padding: 0px 15px 0px 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .links-menu ul li{
+      list-style: none;
+      margin-right: 25px;
+      text-transform:capitalize;
+      min-width: max-content;
+   }
+   
+  }
