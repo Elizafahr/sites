@@ -3,18 +3,17 @@
 @import './base/vars.scss';
 @import './base/mixins.scss';
 @import './base/base.scss';
+@import './base/cards.scss';
 
 //blocks
-// @import './blocks/header';
-// @import './blocks/nav';
-// @import './blocks/info';
-// @import './blocks/benefits';
-// @import './blocks/appartments';
-// @import './blocks/card';
-// @import './blocks/cta';
-// @import './blocks/forms';
-// @import './blocks/video';
-// @import './blocks/map';
-// @import './blocks/feedback';
-// @import './blocks/footer';
-// @import './blocks/nav-icon';
+  @import './blocks/header';
+  @import './blocks/nav';
+  @import './blocks/rewiew';
+  @import './blocks/CTA';
+  @import './blocks/contact';
+  @import './blocks/footer';
+  @import './blocks/stories';
+  @import './blocks/cursor';
+  @import './blocks/about'; 
+  @import './blocks/plans';  
+  @import './blocks/nav-icon';  

@@ -1,56 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+
 body {
   font-family: $font-main;
-  background-color: $dark;
-  color: $white;
-  font-size: 16px;
+  background-color: $white;
+  color: $dark;
+  font-size: 18px;
+  cursor: none;
+  height: 100vh;
+  overflow-x: hidden;
+
+  
 }
 a {
   color: $white;
-
   transition: color 0.2s ease-in;
-
+  font-weight: 500;
   &:hover {
-    color: $accent;
+    color: $accent-green;
   }
 }
 
-  /* main-container */
 .container {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.text-rigth{
-    text-align: right;
-}
-
-.visually-hidden {
-  /* Contain text within 1px box */
-height: 1px;
-overflow: hidden;
-width: 1px;
-
-/* Keep the layout */
-position: absolute;
-
-/* Remove any visible trace (e.g. background color) */
-clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-clip: rect(1px, 1px, 1px, 1px);
-clip-path: inset(50%); /* browsers in the future */
-
-/* Prevent the screen reader to skip spaces between words */
-white-space: nowrap;
-}
-
-
-
-.title-2 {
-  font-size: 36px;
+h1 {
   font-family: $font-accent;
-  color: $accent;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 70px;
+  letter-spacing: 0.03em;
+}
+h2 {
+  font-family: $font-accent; 
+  font-weight: 400;
+  font-size: 45px; 
+  letter-spacing: 0.04em;
+  text-align: center; 
+  line-height: 108%;
 
-   
+}
+.accent-text {
+  font-family: $font-accent;
+}
+p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffffb9;
+}
+
+.btn {
+  padding: 16px 32px;
+  width: max-content;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-white {
+  padding: 16px 32px;
+  border-radius: 10px;
+  background-color: $white;
+  color: $dark;
+  stroke-width: 1px;
+  stroke: #1c1c1d;
+  box-shadow: 0 4px 0 0 $dark;
+  transition:  background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: $accent-green;
+  }
+}
+.flex{
+  display: flex;
+}
+input{
+  color: $dark;
 }

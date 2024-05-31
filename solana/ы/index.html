@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       .container {
+            width: 100%;
+            height: 150vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .img-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .paralax-img {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: all 1s ease-in-out;
+        }
+
+       .paralax-img.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="1.png" alt="" class="paralax-img">
+            <img src="2.png" alt="" class="paralax-img">
+            <img src="3.png" alt="" class="paralax-img">
+            <img src="4.png" alt="" class="paralax-img">
+        </div>
+    </div>
+    <script>
+        const paralaxImgs = document.querySelectorAll('.paralax-img');
+        const observerOptions = { threshold: 0.5 };
+        let currentIndex = 0;
+
+        function setupObserver(index) {
+            const img = paralaxImgs[index];
+            const observer = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    img.classList.add('show');
+                    currentIndex++;
+                    if (currentIndex < paralaxImgs.length) {
+                        setTimeout(() => setupObserver(currentIndex), 350); // Задержка перед следующим наблюдателем
+                    }
+                }
+            }, observerOptions);
+
+            observer.observe(img);
+        }
+
+        setupObserver(currentIndex);
+    </script>
+</body>
+
+</html>
