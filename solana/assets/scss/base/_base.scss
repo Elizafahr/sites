@@ -6,7 +6,7 @@ body {
   background-color: $white;
   color: $dark;
   font-size: 18px;
-  cursor: none;
+  cursor: none !important;
   height: 100vh;
   overflow-x: hidden;
 
@@ -73,7 +73,7 @@ p {
   transition:  background-color 0.2s ease-in;
 
   &:hover {
-    background-color: $accent-green;
+    background-color: #fac6ffb9;
   }
 }
 .flex{

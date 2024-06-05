@@ -44,7 +44,7 @@
       @include mediaLargeTablet {
         grid-template-columns: 70% 30%;
       }
-      @include mediaMobile(undefined) {
+      @include mediaMobile {
         grid-template-columns:auto;
       }
       .text-content {
@@ -175,3 +175,14 @@
   }
 }
  
+.socialMedia{
+  li{
+    a{
+      &:hover{
+        img{
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
