@@ -2,13 +2,14 @@ const navBtn = document.querySelector('.nav-icon-btn');
 const navIcon = document.querySelector('.nav-icon');
 const nav = document.querySelector('.header__top-row');
 
+ //навигационное меню
 navBtn.onclick = function () {
     navIcon.classList.toggle('nav-icon--active');
     nav.classList.toggle('header__top-row--mobile');
     document.body.classList.toggle('no-scroll');
 }
 
- 
+ //таб
   function openCity(cityName) {
     var i;
     var x = document.getElementsByClassName("city");
@@ -30,7 +31,7 @@ navBtn.onclick = function () {
 
 
 
-
+ //анимации
   document.addEventListener('DOMContentLoaded', function() {
     const storiesContainer = document.querySelector('.Stories .container .Stories-items');
     const storiesItems = document.querySelectorAll('.Stories-item');
@@ -61,8 +62,7 @@ navBtn.onclick = function () {
             });
         }
 
-        // Check if the image container is in view
-        if (scrollPosition > imgContainerTop - windowHeight * 0.8) {
+         if (scrollPosition > imgContainerTop - windowHeight * 0.8) {
             imgContainer.classList.add('onActive');
         } else {
             imgContainer.classList.remove('onActive');
@@ -76,7 +76,6 @@ navBtn.onclick = function () {
 
 
  // cursor
-
   document.addEventListener('mousemove', (e) => {
     const cursor = document.querySelector('.cursor');
     cursor.style.transform = `translate(${e.clientX - 15}px, ${e.clientY - 15}px)`;
